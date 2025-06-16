@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Menu extends StatelessWidget {
+  const Menu({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -8,7 +10,7 @@ class Menu extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          DrawerHeader(
+          const DrawerHeader(
             decoration: BoxDecoration(
               color: Colors.blue,
             ),
@@ -18,31 +20,31 @@ class Menu extends StatelessWidget {
             ),
           ),
           ListTile(
-            title: Text('Portada'),
+            title: const Text('Portada'),
             onTap: () {
               Navigator.pushNamed(context, '/portada');
             },
           ),
           ListTile(
-            title: Text('Institución'),
+            title: const Text('Institución'),
             onTap: () {
               Navigator.pushNamed(context, '/institucion');
             },
           ),
           ListTile(
-            title: Text('Docentes'),
+            title: const Text('Docentes'),
             onTap: () {
               Navigator.pushNamed(context, '/docentes');
             },
           ),
           ListTile(
-            title: Text('Títulos Profesionales'),
+            title: const Text('Títulos Profesionales'),
             onTap: () {
               Navigator.pushNamed(context, '/areas_tecnicas');
             },
           ),
           ListTile(
-            title: Text('Contactos'),
+            title: const Text('Contactos'),
             onTap: () {
               Navigator.pushNamed(context, '/contactos');
             },

@@ -15,14 +15,14 @@ class Page404 extends StatelessWidget {
               
               
           
-              Container(
+              SizedBox(
                 
                 width: 400, 
                 height: 400,
                 child: Image.network("https://emojiisland.com/cdn/shop/products/Sad_Face_Emoji_large.png?v=1571606037")),
           
               Container(
-                child: Text("404",
+                child: const Text("404",
                 style: TextStyle(
                   fontSize: 100,
                 ),
@@ -30,7 +30,7 @@ class Page404 extends StatelessWidget {
           
               ),
               Container(
-                child: Text("Página en proceso",
+                child: const Text("Página en proceso",
                 style: TextStyle(
                   fontSize: 50,
                 ),

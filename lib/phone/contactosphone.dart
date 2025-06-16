@@ -5,6 +5,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart'; // Importar Firestore
 
 class ContactosPhone extends StatefulWidget {
+  const ContactosPhone({super.key});
+
   @override
   _ContactosPhoneState createState() => _ContactosPhoneState();
 }
@@ -37,11 +39,11 @@ class _ContactosPhoneState extends State<ContactosPhone> {
     return Scaffold(
       drawer: Menu(),
       appBar: AppBar(
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.white,
         ),
         backgroundColor: Colors.blue,
-        title: Text(
+        title: const Text(
           'Contactos',
           style: TextStyle(
             fontSize: 20, // Tamaño ajustado para móvil
@@ -54,7 +56,7 @@ class _ContactosPhoneState extends State<ContactosPhone> {
             onPressed: () {
               _launchUrl('https://www.facebook.com/Institutopolitecnicoaltagraciaiglesias.delora');
             },
-            icon: Icon(Icons.facebook),
+            icon: const Icon(Icons.facebook),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -62,7 +64,7 @@ class _ContactosPhoneState extends State<ContactosPhone> {
             onPressed: () {
               _launchUrl('https://www.instagram.com/p.altagraciaiglesiasdelora/');
             },
-            icon: FaIcon(FontAwesomeIcons.instagram),
+            icon: const FaIcon(FontAwesomeIcons.instagram),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -70,7 +72,7 @@ class _ContactosPhoneState extends State<ContactosPhone> {
             onPressed: () {
               _launchUrl('https://www.youtube.com/');
             },
-            icon: FaIcon(FontAwesomeIcons.youtube),
+            icon: const FaIcon(FontAwesomeIcons.youtube),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -100,7 +102,7 @@ class _ContactosPhoneState extends State<ContactosPhone> {
             Container(
               color: Colors.grey[300],
               padding: const EdgeInsets.all(20.0),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
@@ -111,24 +113,24 @@ class _ContactosPhoneState extends State<ContactosPhone> {
                       fontSize: 30,
                     ),
                   ),
-                  const SizedBox(height: 10),
-                  const Text(
+                  SizedBox(height: 10),
+                  Text(
                     "We would love to speak with you.",
                     style: TextStyle(
                       color: Colors.black54,
                       fontSize: 14,
                     ),
                   ),
-                  const SizedBox(height: 5),
-                  const Text(
+                  SizedBox(height: 5),
+                  Text(
                     "Feel free to reach out using the below details.",
                     style: TextStyle(
                       color: Colors.black54,
                       fontSize: 14,
                     ),
                   ),
-                  const SizedBox(height: 40),
-                  const Text(
+                  SizedBox(height: 40),
+                  Text(
                     "Politécnico Altagracia Iglesias de Lora",
                     style: TextStyle(
                       color: Colors.blue,
@@ -136,9 +138,9 @@ class _ContactosPhoneState extends State<ContactosPhone> {
                       fontSize: 20,
                     ),
                   ),
-                  const SizedBox(height: 10),
+                  SizedBox(height: 10),
                   Row(
-                    children: const [
+                    children: [
                       Icon(Icons.call, color: Colors.blue, size: 20.0),
                       SizedBox(width: 10),
                       Expanded(
@@ -152,9 +154,9 @@ class _ContactosPhoneState extends State<ContactosPhone> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 10),
+                  SizedBox(height: 10),
                   Row(
-                    children: const [
+                    children: [
                       Icon(Icons.email, color: Colors.blue, size: 20.0),
                       SizedBox(width: 10),
                       Expanded(

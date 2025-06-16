@@ -5,6 +5,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'menu.dart';
 
 class AreasTecnicas extends StatefulWidget {
+  const AreasTecnicas({super.key});
+
   @override
   _AreasTecnicasState createState() => _AreasTecnicasState();
 }
@@ -32,11 +34,11 @@ class _AreasTecnicasState extends State<AreasTecnicas> {
 
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.white,
         ),
         backgroundColor: Colors.blue,
-        title: Text(
+        title: const Text(
           'Títulos profesionales',
           style: TextStyle(
             color: Colors.white,
@@ -49,7 +51,7 @@ class _AreasTecnicasState extends State<AreasTecnicas> {
             onPressed: () {
               _launchUrl('https://www.facebook.com/Institutopolitecnicoaltagraciaiglesias.delora');
             },
-            icon: Icon(Icons.facebook),
+            icon: const Icon(Icons.facebook),
             color: Colors.white,
             iconSize: 30,
           ),
@@ -57,7 +59,7 @@ class _AreasTecnicasState extends State<AreasTecnicas> {
             onPressed: () {
               _launchUrl('https://www.instagram.com/p.altagraciaiglesiasdelora/');
             },
-            icon: FaIcon(FontAwesomeIcons.instagram),
+            icon: const FaIcon(FontAwesomeIcons.instagram),
             color: Colors.white,
             iconSize: 30,
           ),
@@ -65,7 +67,7 @@ class _AreasTecnicasState extends State<AreasTecnicas> {
             onPressed: () {
               _launchUrl('https://www.youtube.com/');
             },
-            icon: FaIcon(FontAwesomeIcons.youtube),
+            icon: const FaIcon(FontAwesomeIcons.youtube),
             color: Colors.white,
             iconSize: 30,
           ),
@@ -89,7 +91,7 @@ class _AreasTecnicasState extends State<AreasTecnicas> {
             ),
           ),
 
-          SizedBox(height: 40),
+          const SizedBox(height: 40),
 
 
 
@@ -160,7 +162,7 @@ class _AreasTecnicasState extends State<AreasTecnicas> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             "Desarrollo y Administración de Aplicaciones Informáticas",
             style: TextStyle(
               fontSize: 24,
@@ -235,7 +237,7 @@ class _AreasTecnicasState extends State<AreasTecnicas> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             
             "Gestión Administrativa y Tributaria",
             style: TextStyle(
@@ -317,7 +319,7 @@ class _AreasTecnicasState extends State<AreasTecnicas> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             "Cuidados de Enfermería y Promoción de la Salud",
             style: TextStyle(
               fontSize: 24,

@@ -10,28 +10,30 @@ class ProximasActividades extends StatelessWidget {
     {"fecha": "2024-12-25", "actividad": "Día de la Navidad"},
   ];
 
+   ProximasActividades({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Próximas Actividades",
+        title: const Text("Próximas Actividades",
         style: TextStyle(
           color: Colors.white
         ),),
         backgroundColor: Colors.blue,
-        iconTheme: IconThemeData(),
+        iconTheme: const IconThemeData(),
       ),
       body: ListView.builder(
         itemCount: actividades.length,
         itemBuilder: (context, index) {
           return Card(
-            margin: EdgeInsets.symmetric(vertical: 10, horizontal: 15),
+            margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
             child: ListTile(
-              leading: Icon(Icons.event, color: Colors.blue),
+              leading: const Icon(Icons.event, color: Colors.blue),
               title: Text(
                 actividades[index]["actividad"]!,
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(fontWeight: FontWeight.bold),
               ),
               subtitle: Text("Fecha: ${actividades[index]["fecha"]!}"),
             ),

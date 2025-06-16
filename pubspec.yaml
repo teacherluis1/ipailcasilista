@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  carousel_slider: ^4.2.0
+  carousel_slider: ^5.0.0
   font_awesome_flutter: ^10.5.0
   url_launcher: ^6.1.7
   firebase_core: ^3.8.1
@@ -67,6 +67,25 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/informatica2.jpeg
+    - assets/informatica1.jpeg
+    - assets/informatica3.jpeg
+    - assets/gestion1.jpeg
+    - assets/gestion2.jpeg
+    - assets/gestion3.jpeg
+    - assets/nursing1.jpeg
+    - assets/nursing2.jpeg
+    - assets/nursing3.jpeg
+    - assets/carusel0.jpeg
+    - assets/carusel1.jpeg
+    - assets/carusel2.jpeg
+    - assets/carusel3.jpeg
+    - assets/ipail.png
+
+
+
+
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

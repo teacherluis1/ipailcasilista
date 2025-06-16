@@ -4,6 +4,8 @@ import 'package:ipail_2/menu.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class InstitucionPhone extends StatefulWidget {
+  const InstitucionPhone({super.key});
+
   @override
   _InstitucionPhoneState createState() => _InstitucionPhoneState();
 }
@@ -28,10 +30,10 @@ class _InstitucionPhoneState extends State<InstitucionPhone> {
 
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.white,
         ),
-        title: Text(
+        title: const Text(
           'Institución',
           style: TextStyle(
             color: Colors.white,
@@ -44,7 +46,7 @@ class _InstitucionPhoneState extends State<InstitucionPhone> {
             onPressed: () {
               _launchUrl('https://www.facebook.com/Institutopolitecnicoaltagraciaiglesias.delora');
             },
-            icon: Icon(Icons.facebook),
+            icon: const Icon(Icons.facebook),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -52,7 +54,7 @@ class _InstitucionPhoneState extends State<InstitucionPhone> {
             onPressed: () {
               _launchUrl('https://www.instagram.com/p.altagraciaiglesiasdelora/');
             },
-            icon: FaIcon(FontAwesomeIcons.instagram),
+            icon: const FaIcon(FontAwesomeIcons.instagram),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -60,7 +62,7 @@ class _InstitucionPhoneState extends State<InstitucionPhone> {
             onPressed: () {
               _launchUrl('https://www.youtube.com/');
             },
-            icon: FaIcon(FontAwesomeIcons.youtube),
+            icon: const FaIcon(FontAwesomeIcons.youtube),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -86,7 +88,7 @@ class _InstitucionPhoneState extends State<InstitucionPhone> {
             ),
           ),
 
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
 
           // Botones de navegación
           SingleChildScrollView(
@@ -100,7 +102,7 @@ class _InstitucionPhoneState extends State<InstitucionPhone> {
               ],
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
 
           // Contenido dinámico
           Expanded(
@@ -148,8 +150,8 @@ class _InstitucionPhoneState extends State<InstitucionPhone> {
   }
 
   Widget _buildMision() {
-    return Padding(
-      padding: const EdgeInsets.all(16.0),
+    return const Padding(
+      padding: EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -177,8 +179,8 @@ class _InstitucionPhoneState extends State<InstitucionPhone> {
   }
 
   Widget _buildVision() {
-    return Padding(
-      padding: const EdgeInsets.all(16.0),
+    return const Padding(
+      padding: EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -205,8 +207,8 @@ class _InstitucionPhoneState extends State<InstitucionPhone> {
   }
 
   Widget _buildValores() {
-    return Padding(
-      padding: const EdgeInsets.all(16.0),
+    return const Padding(
+      padding: EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [

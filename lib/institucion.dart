@@ -5,6 +5,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'menu.dart';
 
 class Institucion extends StatefulWidget {
+  const Institucion({super.key});
+
   @override
   _InstitucionState createState() => _InstitucionState();
 }
@@ -32,10 +34,10 @@ class _InstitucionState extends State<Institucion> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.white,
         ),
-        title: Text(
+        title: const Text(
           'Institución',
           style: TextStyle(
             color: Colors.white,
@@ -48,7 +50,7 @@ class _InstitucionState extends State<Institucion> {
             onPressed: () {
               _launchUrl('https://www.facebook.com/Institutopolitecnicoaltagraciaiglesias.delora');
             },
-            icon: Icon(Icons.facebook),
+            icon: const Icon(Icons.facebook),
             color: Colors.white,
             iconSize: 30,
           ),
@@ -56,7 +58,7 @@ class _InstitucionState extends State<Institucion> {
             onPressed: () {
               _launchUrl('https://www.instagram.com/p.altagraciaiglesiasdelora/');
             },
-            icon: FaIcon(FontAwesomeIcons.instagram),
+            icon: const FaIcon(FontAwesomeIcons.instagram),
             color: Colors.white,
             iconSize: 30,
           ),
@@ -64,7 +66,7 @@ class _InstitucionState extends State<Institucion> {
             onPressed: () {
               _launchUrl('https://www.youtube.com/');
             },
-            icon: FaIcon(FontAwesomeIcons.youtube),
+            icon: const FaIcon(FontAwesomeIcons.youtube),
             color: Colors.white,
             iconSize: 30,
           ),
@@ -88,7 +90,7 @@ class _InstitucionState extends State<Institucion> {
             ),
           ),
       
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
       
       
       
@@ -153,8 +155,8 @@ class _InstitucionState extends State<Institucion> {
 
   // Contenido de "Misión"
   Widget _buildMision() {
-    return Padding(
-      padding: const EdgeInsets.all(20.0),
+    return const Padding(
+      padding: EdgeInsets.all(20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -166,7 +168,7 @@ class _InstitucionState extends State<Institucion> {
               color: Colors.blue,
             ),
           ),
-          const SizedBox(height: 10),
+          SizedBox(height: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -206,8 +208,8 @@ class _InstitucionState extends State<Institucion> {
 
   // Contenido de "Visión"
   Widget _buildVision() {
-    return Padding(
-      padding: const EdgeInsets.all(20.0),
+    return const Padding(
+      padding: EdgeInsets.all(20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -220,7 +222,7 @@ class _InstitucionState extends State<Institucion> {
               color: Colors.blue,
             ),
           ),
-          const SizedBox(height: 10),
+          SizedBox(height: 10),
 
 
           Column(
@@ -264,8 +266,8 @@ class _InstitucionState extends State<Institucion> {
 
   // Contenido de "Valores"
   Widget _buildValores() {
-    return Padding(
-      padding: const EdgeInsets.all(20.0),
+    return const Padding(
+      padding: EdgeInsets.all(20.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -277,7 +279,7 @@ class _InstitucionState extends State<Institucion> {
               color: Colors.blue,
             ),
           ),
-          const SizedBox(height: 10),
+          SizedBox(height: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

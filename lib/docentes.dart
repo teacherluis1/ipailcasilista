@@ -5,6 +5,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'menu.dart';
 
 class Docentes extends StatefulWidget {
+  const Docentes({super.key});
+
   @override
   _DocentesState createState() => _DocentesState();
 }
@@ -35,12 +37,12 @@ class _DocentesState extends State<Docentes> {
 
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.white,
         ),
 
         backgroundColor: Colors.blue,
-        title: Text(
+        title: const Text(
           'Docentes',
           style: TextStyle(
             color: Colors.white,
@@ -52,7 +54,7 @@ class _DocentesState extends State<Docentes> {
             onPressed: () {
               _launchUrl('https://www.facebook.com/Institutopolitecnicoaltagraciaiglesias.delora');
             },
-            icon: Icon(Icons.facebook),
+            icon: const Icon(Icons.facebook),
             color: Colors.white,
             iconSize: 30,
           ),
@@ -60,7 +62,7 @@ class _DocentesState extends State<Docentes> {
             onPressed: () {
               _launchUrl('https://www.instagram.com/p.altagraciaiglesiasdelora/');
             },
-            icon: FaIcon(FontAwesomeIcons.instagram),
+            icon: const FaIcon(FontAwesomeIcons.instagram),
             color: Colors.white,
             iconSize: 30,
           ),
@@ -68,7 +70,7 @@ class _DocentesState extends State<Docentes> {
             onPressed: () {
               _launchUrl('https://www.youtube.com/');
             },
-            icon: FaIcon(FontAwesomeIcons.youtube),
+            icon: const FaIcon(FontAwesomeIcons.youtube),
             color: Colors.white,
             iconSize: 30,
           ),
@@ -92,7 +94,7 @@ class _DocentesState extends State<Docentes> {
             ),
           ),
 
-          SizedBox(height: 50),
+          const SizedBox(height: 50),
 
 
 
@@ -163,7 +165,7 @@ class _DocentesState extends State<Docentes> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               "Equipo de Gestión",
               style: TextStyle(
                 fontSize: 24,
@@ -191,12 +193,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Felicia Hernández",
+                    const Text("Felicia Hernández",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Directora",
+                    const Text("Directora",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -218,12 +220,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Milagro Durán",
+                    const Text("Milagro Durán",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Sub-directora",
+                    const Text("Sub-directora",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -245,12 +247,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Yajaira García",
+                    const Text("Yajaira García",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Coordinadora",
+                    const Text("Coordinadora",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -281,12 +283,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Josefina García",
+                    const Text("Josefina García",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Coordinadora",
+                    const Text("Coordinadora",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -308,12 +310,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Yngrid González",
+                    const Text("Yngrid González",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Psicóloga",
+                    const Text("Psicóloga",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -357,7 +359,7 @@ class _DocentesState extends State<Docentes> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               "Docentes del Primer Ciclo",
               style: TextStyle(
                 fontSize: 24,
@@ -386,12 +388,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Reyna Vidal",
+                    const Text("Reyna Vidal",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Lengua Española",
+                    const Text("Lengua Española",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -413,12 +415,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Jairo Cruz",
+                    const Text("Jairo Cruz",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Lengua Española",
+                    const Text("Lengua Española",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -440,12 +442,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Delvinson Pérez",
+                    const Text("Delvinson Pérez",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Matemática",
+                    const Text("Matemática",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -455,7 +457,7 @@ class _DocentesState extends State<Docentes> {
                  
                   ],
                 ),  
-                SizedBox(height: 50,),
+                const SizedBox(height: 50,),
       
       
             Row(
@@ -475,12 +477,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Erny Rosario",
+                    const Text("Erny Rosario",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Matemática",
+                    const Text("Matemática",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -502,12 +504,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Leidy García",
+                    const Text("Leidy García",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Ciencias Sociales",
+                    const Text("Ciencias Sociales",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -529,12 +531,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Biorky Suero",
+                    const Text("Biorky Suero",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Ciencias Sociales",
+                    const Text("Ciencias Sociales",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -545,7 +547,7 @@ class _DocentesState extends State<Docentes> {
                   ],
       
                 ), 
-              SizedBox(height: 50,),
+              const SizedBox(height: 50,),
  
       
       
@@ -566,12 +568,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Francisco Contreras",
+                    const Text("Francisco Contreras",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Ciencias de la Naturaleza",
+                    const Text("Ciencias de la Naturaleza",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -593,12 +595,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Ana Daisy Rodríguez",
+                    const Text("Ana Daisy Rodríguez",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Ciencias de la Naturaleza",
+                    const Text("Ciencias de la Naturaleza",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -620,12 +622,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Claribel Taveras",
+                    const Text("Claribel Taveras",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Lenguas Extranjeras (Inglés)",
+                    const Text("Lenguas Extranjeras (Inglés)",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -635,7 +637,7 @@ class _DocentesState extends State<Docentes> {
                  
                   ],     
                 ),  
-                 SizedBox(height: 50,),               
+                 const SizedBox(height: 50,),               
       
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -654,12 +656,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Estephani Payero",
+                    const Text("Estephani Payero",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Lenguas Extranjeras (Francés)",
+                    const Text("Lenguas Extranjeras (Francés)",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -681,12 +683,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Edwin Castillo",
+                    const Text("Edwin Castillo",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Educación Física",
+                    const Text("Educación Física",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -708,12 +710,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Eulogio Tineo",
+                    const Text("Eulogio Tineo",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Educación Artística",
+                    const Text("Educación Artística",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -724,7 +726,7 @@ class _DocentesState extends State<Docentes> {
                   ],     
                 ),  
                 
-                   SizedBox(height: 50,),   
+                   const SizedBox(height: 50,),   
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -742,12 +744,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Aníbal Almonte",
+                    const Text("Aníbal Almonte",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Formación Integral, Humana y Religiosa",
+                    const Text("Formación Integral, Humana y Religiosa",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -769,12 +771,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Marcos Reyes",
+                    const Text("Marcos Reyes",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Matemática",
+                    const Text("Matemática",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -832,7 +834,7 @@ class _DocentesState extends State<Docentes> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               "Docentes del Segundo Ciclo",
               style: TextStyle(
                 fontSize: 24,
@@ -859,12 +861,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Digna Cabrera",
+                    const Text("Digna Cabrera",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Lengua Española",
+                    const Text("Lengua Española",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -886,12 +888,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Sorany Gómez",
+                    const Text("Sorany Gómez",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Lengua Española",
+                    const Text("Lengua Española",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -913,12 +915,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Omar Ureña",
+                    const Text("Omar Ureña",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Matemática",
+                    const Text("Matemática",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -929,7 +931,7 @@ class _DocentesState extends State<Docentes> {
                   ],
       
                 ),  
-                SizedBox(height: 50,),
+                const SizedBox(height: 50,),
       
       
       
@@ -950,12 +952,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("José Manuel Alcántara",
+                    const Text("José Manuel Alcántara",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Matemática",
+                    const Text("Matemática",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -977,12 +979,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Francisca Gómez",
+                    const Text("Francisca Gómez",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Ciencias Sociales",
+                    const Text("Ciencias Sociales",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1004,12 +1006,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("César Hatchett",
+                    const Text("César Hatchett",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Ciencias de la Naturaleza",
+                    const Text("Ciencias de la Naturaleza",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1019,7 +1021,7 @@ class _DocentesState extends State<Docentes> {
                  
                   ],
                 ),  
-                SizedBox(height: 50,),
+                const SizedBox(height: 50,),
       
       
             Row(
@@ -1039,12 +1041,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Yokasta Puig",
+                    const Text("Yokasta Puig",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Lenguas Extranjeras (Inglés)",
+                    const Text("Lenguas Extranjeras (Inglés)",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1066,12 +1068,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Estephani Payero",
+                    const Text("Estephani Payero",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Lenguas Extranjeras (Inglés)",
+                    const Text("Lenguas Extranjeras (Inglés)",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1093,12 +1095,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Luis Hernández",
+                    const Text("Luis Hernández",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Lenguas Extranjeras (Inglés)",
+                    const Text("Lenguas Extranjeras (Inglés)",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1109,7 +1111,7 @@ class _DocentesState extends State<Docentes> {
                   ],
       
                 ), 
-              SizedBox(height: 50,),
+              const SizedBox(height: 50,),
  
       
       
@@ -1130,12 +1132,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Ana Hilda Cordero",
+                    const Text("Ana Hilda Cordero",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Informática y Comunicaciones",
+                    const Text("Informática y Comunicaciones",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1157,12 +1159,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Gregorio Núñez",
+                    const Text("Gregorio Núñez",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Informática y Comunicaciones",
+                    const Text("Informática y Comunicaciones",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1184,12 +1186,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Ilkania Rosario",
+                    const Text("Ilkania Rosario",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Informática y Comunicaciones",
+                    const Text("Informática y Comunicaciones",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1199,7 +1201,7 @@ class _DocentesState extends State<Docentes> {
                  
                   ],     
                 ),  
-                SizedBox(height: 50,),
+                const SizedBox(height: 50,),
                 
       
             Row(
@@ -1219,12 +1221,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Noroibi Muñoz",
+                    const Text("Noroibi Muñoz",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Informática y Comunicaciones",
+                    const Text("Informática y Comunicaciones",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1246,12 +1248,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Eunices Samboy",
+                    const Text("Eunices Samboy",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Informática y Comunicaciones",
+                    const Text("Informática y Comunicaciones",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1273,12 +1275,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Rosmery Ovalle",
+                    const Text("Rosmery Ovalle",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Administración y Comercio",
+                    const Text("Administración y Comercio",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1289,7 +1291,7 @@ class _DocentesState extends State<Docentes> {
                   ],     
                 ),  
                 
-                SizedBox(height: 50,),      
+                const SizedBox(height: 50,),      
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -1307,12 +1309,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Zunicaury García",
+                    const Text("Zunicaury García",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Administración y Comercio",
+                    const Text("Administración y Comercio",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1334,12 +1336,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Marta Serrata",
+                    const Text("Marta Serrata",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Administración y Comercio",
+                    const Text("Administración y Comercio",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1361,12 +1363,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Nely Rosario",
+                    const Text("Nely Rosario",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Administración y Comercio",
+                    const Text("Administración y Comercio",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1377,7 +1379,7 @@ class _DocentesState extends State<Docentes> {
                   ],     
                 ),  
                 
-                 SizedBox(height: 50,),     
+                 const SizedBox(height: 50,),     
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -1395,12 +1397,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Mauricio Bisonó",
+                    const Text("Mauricio Bisonó",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Administración y Comercio",
+                    const Text("Administración y Comercio",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1422,12 +1424,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Aracelis Cuevas",
+                    const Text("Aracelis Cuevas",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Administración y Comercio",
+                    const Text("Administración y Comercio",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1449,12 +1451,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Carmen Rodríguez",
+                    const Text("Carmen Rodríguez",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Salud",
+                    const Text("Salud",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1465,7 +1467,7 @@ class _DocentesState extends State<Docentes> {
                   ],     
                 ),  
                 
-                 SizedBox(height: 50,),     
+                 const SizedBox(height: 50,),     
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -1483,12 +1485,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Nidia García",
+                    const Text("Nidia García",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Salud",
+                    const Text("Salud",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1510,12 +1512,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Carlos Hilario",
+                    const Text("Carlos Hilario",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Salud",
+                    const Text("Salud",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1537,12 +1539,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Betty Vásquez",
+                    const Text("Betty Vásquez",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Salud",
+                    const Text("Salud",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1558,7 +1560,7 @@ class _DocentesState extends State<Docentes> {
 
 
 
-                 SizedBox(height: 50,),     
+                 const SizedBox(height: 50,),     
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -1576,12 +1578,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("Eridania Santos",
+                    const Text("Eridania Santos",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("Salud",
+                    const Text("Salud",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1603,12 +1605,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("",
+                    const Text("",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("",
+                    const Text("",
                     style: TextStyle(
                       color: Colors.grey
                     ),
@@ -1630,12 +1632,12 @@ class _DocentesState extends State<Docentes> {
                         
                       ),
                     ),
-                    Text("",
+                    const Text("",
                     style: TextStyle(
                       fontSize: 18
       
                     ),),
-                    Text("",
+                    const Text("",
                     style: TextStyle(
                       color: Colors.grey
                     ),

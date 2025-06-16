@@ -25,56 +25,56 @@ class AulaVirtual extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
 
                   children: [
-                    Text("Bienvenido",
+                    const Text("Bienvenido",
                     style: TextStyle(
                       fontSize: 40,
                       color: Colors.white
                     ),
                     ),
-                    Text("Aula virtual del IPAIL",
+                    const Text("Aula virtual del IPAIL",
                     style: TextStyle(
                       fontSize: 20,
                       color: Colors.black87
                     ),),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
                       child: TextFormField(
                         maxLength: 10,
                       decoration: InputDecoration(
                         
-                        border: OutlineInputBorder(),
+                        border: const OutlineInputBorder(),
                         filled: true,
                         fillColor: Colors.grey[100],
                         hintText: "Ingresa tu usuario",
-                        prefixIcon: Icon(Icons.person),
+                        prefixIcon: const Icon(Icons.person),
                        
                       ),
                     ),
                     ),
-                    SizedBox(height: 10,),
+                    const SizedBox(height: 10,),
                     Container(
-                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
                       child: TextFormField(
                         maxLength: 4,
                         obscureText: true,
                       decoration: InputDecoration(
                         
-                        border: OutlineInputBorder(),
+                        border: const OutlineInputBorder(),
                         filled: true,
                         fillColor: Colors.grey[100],
                         hintText: "Ingresa tu contraseña",
-                        prefixIcon: Icon(Icons.security),
+                        prefixIcon: const Icon(Icons.security),
                        
                       ),
                     ),
                     ),
 
-                    SizedBox(height: 15,),
+                    const SizedBox(height: 15,),
 
 
                     ElevatedButton(onPressed: (){},
-                    child: Text("Login",
+                    child: const Text("Login",
                     style: TextStyle(
                       fontSize: 18
                     ),))

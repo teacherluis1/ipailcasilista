@@ -7,6 +7,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:ipail_2/proximasactividades.dart';
 
 class PortadaPhone extends StatelessWidget {
+  const PortadaPhone({super.key});
+
   Future<void> _launchUrl(String url) async {
     final Uri uri = Uri.parse(url);
     if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
@@ -20,12 +22,12 @@ class PortadaPhone extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.blue,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.white,
         ),
         title: Row(
           children: [
-            Text(
+            const Text(
               'Portada',
               style: TextStyle(
                 color: Colors.white,
@@ -33,7 +35,7 @@ class PortadaPhone extends StatelessWidget {
                 fontWeight: FontWeight.normal,
               ),
             ),
-            Spacer(),
+            const Spacer(),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -44,12 +46,12 @@ class PortadaPhone extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.orange,
                 foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
+                shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.zero,
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               ),
-              child: Text(
+              child: const Text(
                 "Aula virtual",
                 style: TextStyle(fontSize: 16), // Tamaño reducido
               ),
@@ -61,7 +63,7 @@ class PortadaPhone extends StatelessWidget {
             onPressed: () {
               _launchUrl('https://www.facebook.com/Institutopolitecnicoaltagraciaiglesias.delora');
             },
-            icon: Icon(Icons.facebook),
+            icon: const Icon(Icons.facebook),
             color: Colors.white,
             iconSize: 20, // Tamaño reducido para móviles
           ),
@@ -69,7 +71,7 @@ class PortadaPhone extends StatelessWidget {
             onPressed: () {
               _launchUrl('https://www.instagram.com/p.altagraciaiglesiasdelora/');
             },
-            icon: FaIcon(FontAwesomeIcons.instagram),
+            icon: const FaIcon(FontAwesomeIcons.instagram),
             color: Colors.white,
             iconSize: 20, // Tamaño reducido
           ),
@@ -77,7 +79,7 @@ class PortadaPhone extends StatelessWidget {
             onPressed: () {
               _launchUrl('https://www.youtube.com/');
             },
-            icon: FaIcon(FontAwesomeIcons.youtube),
+            icon: const FaIcon(FontAwesomeIcons.youtube),
             color: Colors.white,
             iconSize: 20, // Tamaño reducido
           ),
@@ -88,7 +90,7 @@ class PortadaPhone extends StatelessWidget {
         children: [
           // Contenido base (carrusel)
           Container(
-            margin: EdgeInsets.symmetric(vertical: 10),
+            margin: const EdgeInsets.symmetric(vertical: 10),
             child: Center(
               child: CarouselSlider(
                 items: [
@@ -102,7 +104,6 @@ class PortadaPhone extends StatelessWidget {
                   enlargeCenterPage: true,
                   aspectRatio: 9 / 16, // Ajustar proporción para móviles
                   viewportFraction: 1.0,
-                  enlargeFactor: 0.3,
                   enableInfiniteScroll: true,
                 ),
               ),
@@ -115,7 +116,7 @@ class PortadaPhone extends StatelessWidget {
                 gradient: LinearGradient(
                   colors: [
                     Colors.transparent,
-                    Colors.black.withOpacity(0.2), // Degradado más suave
+                    Color.fromRGBO(0, 0, 0, 0.2), // Degradado más suave
                   ],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
@@ -126,8 +127,8 @@ class PortadaPhone extends StatelessWidget {
           // Texto y botón centrados
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Center(
+            children: [  
+               const Center(
                 child: Text(
                   "Instituto Politécnico Altagracia Iglesias de Lora",
                   textAlign: TextAlign.center,
@@ -145,7 +146,7 @@ class PortadaPhone extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 20), // Espacio reducido
+              const SizedBox(height: 20), // Espacio reducido
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -157,9 +158,9 @@ class PortadaPhone extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.orange,
                   foregroundColor: Colors.white,
-                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 8),
+                  padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
                 ),
-                child: Text(
+                child: const Text(
                   "Próximas Actividades",
                   style: TextStyle(
                     fontSize: 16, // Texto reducido
@@ -174,13 +175,13 @@ class PortadaPhone extends StatelessWidget {
     );
   }
 
-  Widget _buildImage(String url) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(10), // Bordes más sutiles
-      child: Image.network(
-        url,
-        fit: BoxFit.cover,
-      ),
-    );
-  }
+Widget _buildImage(String assetPath) {
+  return ClipRRect(
+    borderRadius: BorderRadius.circular(10),
+    child: Image.asset(
+      assetPath,
+      fit: BoxFit.cover,
+    ),
+  );
+}
 }

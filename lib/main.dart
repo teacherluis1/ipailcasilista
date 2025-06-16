@@ -5,11 +5,10 @@ import 'contactos.dart';
 import 'docentes.dart';
 import 'institucion.dart';
 import 'portada.dart';
-import 'menu.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: FirebaseOptions(
+  await Firebase.initializeApp(options: const FirebaseOptions(
     apiKey: "TU_API_KEY", 
     appId: "TU_APP_ID", 
     messagingSenderId: "TU_MESSAGING_SENDER_ID", 
@@ -20,6 +19,8 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,12 +31,12 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => Portada(), 
-        '/areas_tecnicas': (context) => AreasTecnicas(),
-        '/contactos': (context) => Contactos(),
-        '/docentes': (context) => Docentes(),
-        '/institucion': (context) => Institucion(),
-        '/portada': (context) => Portada(),
+        '/': (context) => const Portada(), 
+        '/areas_tecnicas': (context) => const AreasTecnicas(),
+        '/contactos': (context) => const Contactos(),
+        '/docentes': (context) => const Docentes(),
+        '/institucion': (context) => const Institucion(),
+        '/portada': (context) => const Portada(),
       },
     );
   }

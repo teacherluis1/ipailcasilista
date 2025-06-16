@@ -4,6 +4,8 @@ import 'package:ipail_2/menu.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class DocentesPhone extends StatefulWidget {
+  const DocentesPhone({super.key});
+
   @override
   _DocentesPhoneState createState() => _DocentesPhoneState();
 }
@@ -22,11 +24,11 @@ class _DocentesPhoneState extends State<DocentesPhone> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.white,
         ),
         backgroundColor: Colors.blue,
-        title: Text(
+        title: const Text(
           'Docentes',
           style: TextStyle(
             color: Colors.white,
@@ -39,7 +41,7 @@ class _DocentesPhoneState extends State<DocentesPhone> {
             onPressed: () {
               _launchUrl('https://www.facebook.com/Institutopolitecnicoaltagraciaiglesias.delora');
             },
-            icon: Icon(Icons.facebook),
+            icon: const Icon(Icons.facebook),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -47,7 +49,7 @@ class _DocentesPhoneState extends State<DocentesPhone> {
             onPressed: () {
               _launchUrl('https://www.instagram.com/p.altagraciaiglesiasdelora/');
             },
-            icon: FaIcon(FontAwesomeIcons.instagram),
+            icon: const FaIcon(FontAwesomeIcons.instagram),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -55,7 +57,7 @@ class _DocentesPhoneState extends State<DocentesPhone> {
             onPressed: () {
               _launchUrl('https://www.youtube.com/');
             },
-            icon: FaIcon(FontAwesomeIcons.youtube),
+            icon: const FaIcon(FontAwesomeIcons.youtube),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -79,7 +81,7 @@ class _DocentesPhoneState extends State<DocentesPhone> {
               textAlign: TextAlign.center,
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           // Botones de navegación en móvil (reducimos tamaños)
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
@@ -153,17 +155,17 @@ class _DocentesPhoneState extends State<DocentesPhone> {
             ),
           ),
         ),
-        SizedBox(height: 5),
+        const SizedBox(height: 5),
         Text(
           nombre,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 16,
           ),
           textAlign: TextAlign.center,
         ),
         Text(
           asignatura,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.grey,
             fontSize: 14,
           ),
@@ -178,7 +180,7 @@ class _DocentesPhoneState extends State<DocentesPhone> {
       padding: const EdgeInsets.all(20.0),
       child: Column(
         children: [
-          Text(
+          const Text(
             "Equipo de Gestión",
             style: TextStyle(
               fontSize: 22,
@@ -228,7 +230,7 @@ class _DocentesPhoneState extends State<DocentesPhone> {
       padding: const EdgeInsets.all(20.0),
       child: Column(
         children: [
-          Text(
+          const Text(
             "Docentes del Primer Ciclo",
             style: TextStyle(
               fontSize: 22,
@@ -243,7 +245,7 @@ class _DocentesPhoneState extends State<DocentesPhone> {
             crossAxisSpacing: 20,
             mainAxisSpacing: 30,
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             childAspectRatio: 0.8, // Ajustar si se requiere mayor o menor altura
             children: firstCycleTeachers,
           ),
@@ -286,7 +288,7 @@ class _DocentesPhoneState extends State<DocentesPhone> {
       padding: const EdgeInsets.all(20.0),
       child: Column(
         children: [
-          Text(
+          const Text(
             "Docentes del Segundo Ciclo",
             style: TextStyle(
               fontSize: 22,
@@ -301,7 +303,7 @@ class _DocentesPhoneState extends State<DocentesPhone> {
             crossAxisSpacing: 20,
             mainAxisSpacing: 30,
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             childAspectRatio: 0.8, 
             children: secondCycleTeachers,
           ),

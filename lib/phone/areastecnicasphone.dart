@@ -5,6 +5,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 
 class AreasTecnicasPhone extends StatefulWidget {
+  const AreasTecnicasPhone({super.key});
+
   @override
   _AreasTecnicasPhoneState createState() => _AreasTecnicasPhoneState();
 }
@@ -24,9 +26,9 @@ class _AreasTecnicasPhoneState extends State<AreasTecnicasPhone> {
     return Scaffold(
       drawer: Menu(),
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: Colors.blue,
-        title: Text(
+        title: const Text(
           'Títulos profesionales',
           style: TextStyle(
             color: Colors.white,
@@ -39,7 +41,7 @@ class _AreasTecnicasPhoneState extends State<AreasTecnicasPhone> {
             onPressed: () {
               _launchUrl('https://www.facebook.com/Institutopolitecnicoaltagraciaiglesias.delora');
             },
-            icon: Icon(Icons.facebook),
+            icon: const Icon(Icons.facebook),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -47,7 +49,7 @@ class _AreasTecnicasPhoneState extends State<AreasTecnicasPhone> {
             onPressed: () {
               _launchUrl('https://www.instagram.com/p.altagraciaiglesiasdelora/');
             },
-            icon: FaIcon(FontAwesomeIcons.instagram),
+            icon: const FaIcon(FontAwesomeIcons.instagram),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -55,7 +57,7 @@ class _AreasTecnicasPhoneState extends State<AreasTecnicasPhone> {
             onPressed: () {
               _launchUrl('https://www.youtube.com/');
             },
-            icon: FaIcon(FontAwesomeIcons.youtube),
+            icon: const FaIcon(FontAwesomeIcons.youtube),
             color: Colors.white,
             iconSize: 25,
           ),
@@ -80,7 +82,7 @@ class _AreasTecnicasPhoneState extends State<AreasTecnicasPhone> {
               ),
             ),
 
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
 
             // Botones de navegación en móvil (reducimos espaciados y tamaños)
             SingleChildScrollView(
@@ -143,7 +145,7 @@ class _AreasTecnicasPhoneState extends State<AreasTecnicasPhone> {
       padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
-          Text(
+          const Text(
             "Desarrollo y Administración de Aplicaciones Informáticas",
             style: TextStyle(
               fontSize: 20,
@@ -173,7 +175,7 @@ class _AreasTecnicasPhoneState extends State<AreasTecnicasPhone> {
       padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
-          Text(
+          const Text(
             "Gestión Administrativa y Tributaria",
             style: TextStyle(
               fontSize: 20,
@@ -204,7 +206,7 @@ class _AreasTecnicasPhoneState extends State<AreasTecnicasPhone> {
       padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
-          Text(
+          const Text(
             "Cuidados de Enfermería y Promoción de la Salud",
             style: TextStyle(
               fontSize: 20,
@@ -222,6 +224,10 @@ class _AreasTecnicasPhoneState extends State<AreasTecnicasPhone> {
               _buildImageCard("assets/nursing1.jpeg"),
               _buildImageCard("assets/nursing2.jpeg"),
               _buildImageCard("assets/nursing3.jpeg"),
+
+
+
+              
             ],
           ),
         ],
@@ -229,18 +235,19 @@ class _AreasTecnicasPhoneState extends State<AreasTecnicasPhone> {
     );
   }
 
-  Widget _buildImageCard(String imageUrl) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(20),
-      child: Container(
-        width: MediaQuery.of(context).size.width * 0.28, // Ajuste para móvil (3 imágenes en pantalla)
-        height: MediaQuery.of(context).size.width * 0.28,
-        color: Colors.grey[200],
-        child: Image.network(
-          imageUrl,
-          fit: BoxFit.cover,
-        ),
+
+Widget _buildImageCard(String assetPath) {
+  return ClipRRect(
+    borderRadius: BorderRadius.circular(20),
+    child: Container(
+      width: MediaQuery.of(context).size.width * 0.28, // Ajuste para móvil (3 imágenes en pantalla)
+      height: MediaQuery.of(context).size.width * 0.28,
+      color: Colors.grey[200],
+      child: Image.asset(
+        assetPath,
+        fit: BoxFit.cover,
       ),
-    );
-  }
+    ),
+  );
+}
 }
